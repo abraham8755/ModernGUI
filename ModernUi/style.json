@@ -1,0 +1,201 @@
+{
+    "QMainWindow": [
+        {
+            "tittle": "AIMediSight",
+            "icon": ":/images/images/lung2.jpg",
+            "frameless": true,
+            "resizable": true,
+            "transluscentBg": true,
+            "navigation": [
+                {
+                    "minimize": "minimizeBtn",
+                    "close": "closeBtn",
+                    "restore": [
+                        {
+                            "buttonName": "restoreBtn",
+                            "normalIcon": ":/icons/square.svg",
+                            "maximizedIcon": ":/icons/copy.svg"
+                        }
+                    ],
+                    "moveWindow": "headerContainer",
+                    "tittleBar": "headerContainer"
+                }
+            ]
+        }
+    ],
+    "QCustomSlideMenu": [
+        {
+            "name": "leftMenuContainer",
+            "defaultSize": [
+                {
+                    "width": 50,
+                    "height": "parent"
+                }
+            ],
+            "collapsedSize": [
+                {
+                    "width": 50,
+                    "height": "parent"
+                }
+            ],
+            "expandedSize": [
+                {
+                    "width": 125,
+                    "height": "parent"
+                }
+            ],
+            "toggleButton": [
+                {
+                    "buttonName": "menuBtn",
+                    "icons": [
+                        {
+                            "whenMenuIsCollapsed": ":/icons/align-justify.svg",
+                            "whenMenuIsExpanded": ":/icons/chevron-left.svg"
+                        }
+                    ]
+                }
+            ],
+            "menuTransitionAnimation": [
+                {
+                    "animationDuration": 50,
+                    "animationEasingCurve": "Linear"
+                }
+            ]
+        },
+        {
+            "name": "centerMenuContainer",
+            "defaultSize": [
+                {
+                    "width": 0,
+                    "height": "parent"
+                }
+            ],
+            "collapsedSize": [
+                {
+                    "width": 0,
+                    "height": "parent"
+                }
+            ],
+            "expandedSize": [
+                {
+                    "width": 200,
+                    "height": "parent"
+                }
+            ],
+            "menuTransitionAnimation": [
+                {
+                    "animationDuration": 50,
+                    "animationEasingCurve": "Linear"
+                }
+            ]
+        },
+        {
+            "name": "rightMenuContainer",
+            "defaultSize": [
+                {
+                    "width": 0,
+                    "height": "parent"
+                }
+            ],
+            "collapsedSize": [
+                {
+                    "width": 0,
+                    "height": "parent"
+                }
+            ],
+            "expandedSize": [
+                {
+                    "width": 200,
+                    "height": "parent"
+                }
+            ],
+            "menuTransitionAnimation": [
+                {
+                    "animationDuration": 50,
+                    "animationEasingCurve": "Linear"
+                }
+            ]
+        },
+        {
+            "name": "popupNotificaitionContainer",
+            "defaultSize": [
+                {
+                    "width": 0,
+                    "height": 0
+                }
+            ],
+            "collapsedSize": [
+                {
+                    "width": 0,
+                    "height": 0
+                }
+            ],
+            "expandedSize": [
+                {
+                    "width": 500,
+                    "height": 100
+                }
+            ],
+            "menuTransitionAnimation": [
+                {
+                    "animationDuration": 50,
+                    "animationEasingCurve": "Linear"
+                }
+            ],
+            "toggleButton": [
+                {
+                    "buttonName": "notificationBtn"
+                }
+            ],
+            "floatPosition": [
+                {
+                    "position": "bottom-center"
+                }
+            ]
+        }
+    ],
+    "QCustomQStackedWidget": [
+        {
+            "name": "mainPages",
+            "navigation": [
+                {
+                    "navigationButtons": [
+                        {
+                            "homeBtn": "page_6",
+                            "prevBtn": "pagesPrevBtn",
+                            "nextBtn": "pagesNextBtn"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "centerMenuPages",
+            "navigation": [
+                {
+                    "navigationButtons": [
+                        {
+                            "settingsBtn": "page",
+                            "infoBtn": "page_2",
+                            "helpBtn": "page_3",
+                            "fileBtn": "filePage"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "rightMenuPages",
+            "navigation": [
+                {
+                    "navigationButtons": [
+                        {
+                            "dataBtn": "page_4",
+                            "toolsBtn": "page_5"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
